@@ -4,6 +4,9 @@
 ## Overview
 Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
 
+
+Here's flowchart depicting the models' workflow
+<img src="./images/meme_architecture.png">
 ## Dataset
 We can create 6 characters :
 `Gromit`, `Pingu`, `Zzangu`, `Loopy` , `Kuromi`, and `Elmo`.
