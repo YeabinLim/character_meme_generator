@@ -1,14 +1,14 @@
 # character_meme_generator
-> To create your own character image using **DreamBooth** and **Inpaint Anything**
+> To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**
 - This repository has not been cleaned up yet
 ## Overview
-
-We can create a total of 6 characters :
-`Gromit`, `Pingu`, `Zzangu`, `Loopy` , `Kuromi`, and `Elmo`.
-
+Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
 
 ## Dataset
-ormally, 5 to 10 images are enough, but due to the characters' less distinct features, we prepared 30 to 45 images to generate high-quality images.
+We can create 6 characters :
+`Gromit`, `Pingu`, `Zzangu`, `Loopy` , `Kuromi`, and `Elmo`.
+
+Normally, 5 to 10 images are enough, but due to the characters' less distinct features, we prepared 30 to 45 images to generate high-quality images.
 | **Character**| **Number** |
 | ------------ | ------ | 
 | Gromit       | 19     |
@@ -25,7 +25,7 @@ ormally, 5 to 10 images are enough, but due to the characters' less distinct fea
 ### DreamBooth with LoRA
 This has trained the model with default settings, including 512x512 resolution, 8GB GPU memory occupied, 1 image per batch, a learning rate of 1e-4, and the training step is set to the value obtained by multiplying the number of training images by 200.
 
-First, Initialize 🤗Accelerate environment with:
+First, Initialize [🤗Accelerate](https://huggingface.co/docs/accelerate/index) environment with:
  ```
   accelerate config
  ```
@@ -52,3 +52,6 @@ accelerate launch train_dreambooth_lora.py \
 ```
 
 ## Inference
+
+
+## Demo
