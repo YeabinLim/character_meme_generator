@@ -52,6 +52,21 @@ accelerate launch train_dreambooth_lora.py \
 --seed="0" \
 --push_to_hub
 ```
+### Inpaint Anything
+This model can create a background for character images. After generating a character-shaped image using the "train_dreambooth_lora" model, you can input the image into the "Inpaint Anything" model. Choose the "Replace Anything" task in "Inpaint Anything."
+
+inpaint Anything model's architecture
+![inpaintanything_architecture](https://github.com/binnnnnny/character_meme_generator/assets/118752772/adf8143f-4d0e-4355-bd41-fcf362a6c380)
+First, installation Requires 
+ ```
+  py python>=3.8
+ ```
+Second, Download the model checkpoints provided in "Segment Anything"
+(e.g. sam_vit_h_4b88939.pth) and put them into ```./pretrained_models ```
+
+Finally, Run the training script. 
+
+
 
 ## Inference
 You can find more detailed information [DreamBooth fine-tuning with LoRA](https://huggingface.co/docs/peft/task_guides/dreambooth_lora)
@@ -69,5 +84,8 @@ image = pipe("a photo of znfhal kuromi", num_inference_steps=20).images[0]
 
 image.save('Kuromi.png")
 ```
+## Result
+
+
 
 ## Demo
