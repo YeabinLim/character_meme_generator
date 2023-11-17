@@ -1,8 +1,6 @@
 # character_meme_generator
 > To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**
 
-You can watch the demo video [here](https://youtu.be/hgY49vRBX0E) using [Gradio](https://github.com/gradio-app/gradio).
-
 ## Overview
 Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
 
@@ -104,3 +102,10 @@ image.save('Kuromi.png")
 | <img src="./images/results/kuromi0.png"> | <p align="center"><img src="./images/results/kuromi1.png" width="75%" height="75%"></p> | <img src="./images/results/elmo0.png">  | <p align="center"><img src="./images/results/elmo1.png" width="75%" height="75%"></p>      |
 | A znfhal kuromi screaming                | The object is standing in front of a house made of snacks, a cartoon-style background   | A purple dpfah elmo                     | It’s a volcanic eruption in the background around the object, a cartoon-style background   |
 
+
+
+## Demo
+You can watch the demo video using [Gradio](https://github.com/gradio-app/gradio). </br>
+This is a video that creates `Elmo` among the six characters. </br>
+
+https://github.com/binnnnnny/character_meme_generator/assets/118752772/d7d08a8d-8376-49e0-a2c6-686ffd410c99
