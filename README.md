@@ -1,6 +1,8 @@
 # character_meme_generator
 > To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**
 
+You can watch the demo video [here](https://youtu.be/hgY49vRBX0E) using [Gradio](https://github.com/gradio-app/gradio).
+
 ## Overview
 Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
 
@@ -56,7 +58,7 @@ accelerate launch train_dreambooth_lora.py \
 This model can create a background for character images. After generating a character-shaped image using the "train_dreambooth_lora" model, you can input the image into the "Inpaint Anything" model. Choose the "Replace Anything" task in "Inpaint Anything."
 
 inpaint Anything model's architecture
-![inpaintanything_architecture](https://github.com/binnnnnny/character_meme_generator/assets/118752772/adf8143f-4d0e-4355-bd41-fcf362a6c380)
+<img src="./images/inpaintanything_architecture.png">
 First, installation Requires 
  ```
   py python>=3.8
@@ -85,7 +87,12 @@ image = pipe("a photo of znfhal kuromi", num_inference_steps=20).images[0]
 image.save('Kuromi.png")
 ```
 ## Result
+| DreamBooth                               | Inpaint Anything                                                                        | DreamBooth                              | Inpaint Anything                                                                           |
+| ---------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------ |
+| <img src="./images/results/gromit0.png" >| <p align="center"><img src="./images/results/gromit1.png" width="75%" height="75%"></p> | <img src="./images/results/pingu0.png"> | <p align="center"><img src="./images/results/pingu1.png" width="75%" height="75%"></p>     |
+| A rmfhalt gromit frowning                | The object is standing in a moonlit forest, a cartoon-style background                  | A vldrn pingu wearing a Chef Outfit     | The object is standing in front of a house made of snacks. It's like a fairy tale and cute |
+| <img src="./images/results/zzangu0.png"> | <p align="center"><img src="./images/results/zzangu1.png" width="75%" height="75%"></p> | <img src="./images/results/loopy0.png"> | <p align="center"><img src="./images/results/loopy1.png" width="75%" height="75%"></p>     |
+| A wkdrn jjangu standing                  | The object is standing right in front of background where fireworks are being displayed | A fnvl loopy smiling                    | It’s a volcanic eruption in the background around the object, a cartoon-style background   |   
+| <img src="./images/results/kuromi0.png"> | <p align="center"><img src="./images/results/kuromi1.png" width="75%" height="75%"></p> | <img src="./images/results/elmo0.png">  | <p align="center"><img src="./images/results/elmo1.png" width="75%" height="75%"></p>      |
+| A znfhal kuromi screaming                | The object is standing in front of a house made of snacks, a cartoon-style background   | A purple dpfah elmo                     | It’s a volcanic eruption in the background around the object, a cartoon-style background   |
 
-
-
-## Demo
