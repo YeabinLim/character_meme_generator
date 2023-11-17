@@ -1,6 +1,6 @@
 # character_meme_generator
 > To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**
-- This repository has not been cleaned up yet
+
 ## Overview
 Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
 
@@ -20,7 +20,6 @@ Normally, 5 to 10 images are enough, but due to the characters' less distinct fe
 | Loopy        | 37     |
 | Kuromi       | 30     |
 | Elmo         | 40     |
-
 
 
 
@@ -55,6 +54,20 @@ accelerate launch train_dreambooth_lora.py \
 ```
 
 ## Inference
+You can find more detailed information [DreamBooth fine-tuning with LoRA](https://huggingface.co/docs/peft/task_guides/dreambooth_lora)
 
+```python
+from huggingface_hub.repocard import RepoCard
+
+lora_model_id = "ssarae/dreambooth_kuromi"
+card = RepoCard.load(lora_model_id)
+base_model_id = card.data.to_dict()["base_model"]
+
+pipe = StableDiffusionPipeline.from_pretrained(base_model_id, torch_dtype=torch.float16).to("cuda")
+pipe.load_lora_weights(lora_model_id)
+image = pipe("a photo of znfhal kuromi", num_inference_steps=20).images[0]
+
+image.save('Kuromi.png")
+```
 
 ## Demo
