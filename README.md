@@ -40,9 +40,9 @@ First, Initialize [🤗Accelerate](https://huggingface.co/docs/accelerate/index)
  ```bash
 accelerate launch train_dreambooth_lora.py \
 --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" \
---instance_data_dir="images/zzangu" \
---instance_prompt="A wkdrn zzangu" \
---validation_prompt="A wkdrn zzangu standing" \
+--instance_data_dir="images/jjangu" \
+--instance_prompt="A wkdrn jjangu" \
+--validation_prompt="A wkdrn jjangu standing" \
 --resolution=512 \
 --train_batch_size=1 \
 --gradient_accumulation_steps=1 \
@@ -57,8 +57,6 @@ accelerate launch train_dreambooth_lora.py \
 ### Inpaint Anything
 This model can create a background for character images. After generating a character-shaped image using the "train_dreambooth_lora" model, you can input the image into the "Inpaint Anything" model. Choose the "Replace Anything" task in "Inpaint Anything."
 
-inpaint Anything model's architecture
-<img src="./images/inpaintanything_architecture.png">
 First, installation Requires 
  ```
   py python>=3.8
@@ -67,7 +65,17 @@ Second, Download the model checkpoints provided in "Segment Anything"
 (e.g. sam_vit_h_4b88939.pth) and put them into ```./pretrained_models ```
 
 Finally, Run the training script. 
-
+```bash
+python replace_anything.py \
+    --input_img images/zzangu_0.png \
+    --coords_type key_in \
+    --point_coords 750 500 \
+    --point_labels 1 \
+    --text_prompt "The object is standing right in front of background where fireworks are being displayed" \
+    --output_dir ./results \
+    --sam_model_type "vit_h" \
+    --sam_ckpt ./pretrained_models/sam_vit_h_4b8939.pth
+```
 
 
 ## Inference
