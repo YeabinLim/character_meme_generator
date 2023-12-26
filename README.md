@@ -1,5 +1,5 @@
 # character_meme_generator
-> To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**.
+> To create your own character image using **DreamBooth with LoRA** and **Inpaint Anything**
 
 ## Overview
 Have you ever heard of the term "meme" ? "Meme" refers to images or pictures that can express a specific word or feeling like emoticons. We usually enjoy collecting memes from websites like Pinterest, Naver, and Google. There are so many diverse memes out there, but it can be quite challenging to find the perfect meme that suits our needs. That's why we thought, "Why not create the memes we want ourselves?" and decided to start this project.
