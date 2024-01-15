@@ -6,7 +6,7 @@ Have you ever heard of the term "meme" ? "Meme" refers to images or pictures tha
 
 
 Here's flowchart depicting the models' workflow
-<img src="./images/meme_architecture.png">
+<img src="./docs/meme_architecture.png">
 ## Dataset
 We can create 6 characters :
 `Gromit`, `Pingu`, `Zzangu`, `Loopy` , `Kuromi`, and `Elmo`.
@@ -95,11 +95,11 @@ image.save('Kuromi.png")
 ## Result
 | DreamBooth                               | Inpaint Anything                                                                        | DreamBooth                              | Inpaint Anything                                                                           |
 | ---------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------ |
-| <img src="./images/results/gromit0.png" >| <p align="center"><img src="./images/results/gromit1.png" width="75%" height="75%"></p> | <img src="./images/results/pingu0.png"> | <p align="center"><img src="./images/results/pingu1.png" width="90%" height="90%"></p>     |
+| <img src="./docs/results/gromit0.png" >| <p align="center"><img src="./docs/results/gromit1.png" width="75%" height="75%"></p> | <img src="./docs/results/pingu0.png"> | <p align="center"><img src="./docs/results/pingu1.png" width="90%" height="90%"></p>     |
 | A rmfhalt gromit frowning                | The object is standing in a moonlit forest, a cartoon-style background                  | A vldrn pingu wearing a Chef Outfit     | The object is standing in front of a house made of snacks. It's like a fairy tale and cute |
-| <img src="./images/results/zzangu0.png"> | <p align="center"><img src="./images/results/zzangu1.png" width="75%" height="75%"></p> | <img src="./images/results/loopy0.png"> | <p align="center"><img src="./images/results/loopy1.png" width="90%" height="90%"></p>     |
+| <img src="./docs/results/zzangu0.png"> | <p align="center"><img src="./docs/results/zzangu1.png" width="75%" height="75%"></p> | <img src="./docs/results/loopy0.png"> | <p align="center"><img src="./docs/results/loopy1.png" width="90%" height="90%"></p>     |
 | A wkdrn jjangu standing                  | The object is standing right in front of background where fireworks are being displayed | A fnvl loopy smiling                    | It’s a volcanic eruption in the background around the object, a cartoon-style background   |   
-| <img src="./images/results/kuromi0.png"> | <p align="center"><img src="./images/results/kuromi1.png" width="75%" height="75%"></p> | <img src="./images/results/elmo0.png" >  | <p align="center"><img src="./images/results/elmo1.png" width="85%" height="85%"></p>      |
+| <img src="./docs/results/kuromi0.png"> | <p align="center"><img src="./docs/results/kuromi1.png" width="75%" height="75%"></p> | <img src="./docs/results/elmo0.png" >  | <p align="center"><img src="./docs/results/elmo1.png" width="85%" height="85%"></p>      |
 | A znfhal kuromi screaming                | The object is standing in front of a house made of snacks, a cartoon-style background   | A purple dpfah elmo                     | It’s a volcanic eruption in the background around the object, a cartoon-style background   |
 
 
